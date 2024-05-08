@@ -286,7 +286,7 @@
                liff.sendMessages([
     {
       type: "text",
-      text: "【カウンセリングシート】" + "\n" + "お名前：" + this.name + "\n" + "電話番号：" + this.tel + "\n" + "症状：" + this.syoujou + "\n" + "来院有無：" + this.visitNumber  + "\n" + "希望日時：" + date + "\n" + "メッセージ：" + this.message,
+      text: "【予約フォーム】" + "\n" + "お名前：" + this.name + "\n" + "ご来店回数：" + this.visitNumber + "\n" + "性別：" + this.gender + "\n" + "日々のスキンケアルーチン：" + this.number  + " + "\n" + "飲酒・喫煙の有無：" + this.name + " + "\n" + "利用したことがあるサロンの種類：" + this.name +" + "\n" + "期待する結果：" + this.name + "\n" + "メッセージ：" + this.message,
     },
   ])
   .then(() => {
@@ -302,7 +302,7 @@
         },
         mounted: async function(){
             await liff.init({
-                liffId: ""
+                liffId: "2004884799-AgYbJGv5"
             }).then(()=>{
                 if (liff.isLoggedIn()) {
                     console.log("ログイン済");
